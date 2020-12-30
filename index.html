@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script type="text/javascript" src="js/main.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<!--OnLoad quando a página carrega-->
+<body onload="load()">
+    <button type="button" onclick="clicou()">Clique aqui</button>
+    <p id="agradecimento" onclick="redirecionar()"></p>
+        <!-- Chamar função através do id-->
+    <p  id="mousemove" onmouseover="trocar()" onmouseout="voltar()">Passe o mouse aqui</p>
+    <!-- Chamar função se passando como parâmetro-->
+    <p onmouseover="trocarP(this)" onmouseout="voltarP(this)">Passe o mouse aqui</p>
+    <!-- OnChange quando há um select-->
+    <select onchange="funcaoChange(this)">
+        <option value="1">Valor 1</option>
+        <option value="2">Valor 2</option>
+        <option value="3">Valor 3</option>
+    </select>
+</body>
+</html>
